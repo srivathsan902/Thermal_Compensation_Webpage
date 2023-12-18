@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+      <title>
+        Thermal Error Prediction
+      </title>
+      <link rel="stylesheet" href="styles/HomePage.css">
+    </head>
+
+    <body>
+
+      <p class="heading">
+        Thermal Error Compensation
+      </p>
+
+      <div class="select-model-parameters">
+        <form id="modelParameters">
+
+          <div>
+            <label class="Models" for="Models">Select Model:</label>
+            <select name="model" id="Models">
+            <option value="Linear Regression">Linear Regression</option>
+            <option value="Random Forest">Random Forest</option>
+            <option value="Support Vector Machine">Support Vector Machine</option>
+            <option value="Neural Networks">Neural Networks</option>
+            <option value="Neural Networks - Online Learning">Neural Networks - Online Learning</option>
+          </select>
+
+          </div>
+
+          <div>
+            <label for="slider1">Select Error Threshold:</label>
+            <input type="range" id="slider1" name="slider1" min="0" max="20" value="10">
+            <span id="slider1Value">10</span>
+          </div>
+
+          <div>
+            <label for="slider2">Select Test-Train Split:</label>
+            <input type="range" id="slider2" name="slider2" min="0" max="100" value="20">
+            <span id="slider2Value">20</span>
+          </div>
+
+          <div>
+            <input type="submit" name="submitType" value="Submit">
+
+          </div>
+
+          <br>
+
+          
+  
+          <br>
+  
+          
+
+          <br>
+
+          <br>
+        </form>
+      </div>
+        
+
+        <form id="uploadForm">
+          <div>
+            <p>Select Feature and Target dataset files:</p>
+            <input type="file" id="myFiles" accept=".csv, application/vnd.openxmlformats-officedocument.spreadsheetml.sheet, application/vnd.ms-excel" multiple />
+            <button>Upload</button>
+          </div>
+          
+        </form>
+        <p class="upload-status"></p>
+        <p class="uploaded-files"></p>
+           
+    
+      <script src="scripts/general.js"></script>
+      <script src="scripts/logUpdate.js"></script>
+      <script src="scripts/sliders.js"></script>
+      <script src="scripts/submitForm.js"></script>
+      <script src="scripts/upload.js"></script>
+        
+
+    </body>
+
+
+</html>

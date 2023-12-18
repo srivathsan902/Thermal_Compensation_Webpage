@@ -1,0 +1,36 @@
+body {
+  background-color: #DBF9FC;
+  }
+.heading{
+  color: black;
+  font-weight: bold;
+  font-size: 30px;
+  font-family: Arial;
+  text-align: center;
+}
+
+.select-model-parameters{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    border: 2px;
+    /* background-color: black; */
+}
+.Models{
+  color: Black;
+  font-size: 15px;
+  font-weight: bold;
+  font-family: Arial;
+  
+}
+.select-model-parameters{
+
+    display: flex;
+}
+
+/* The container must be positioned relative: */
+.custom-select {
+  position: relative;
+  font-family: Arial;
+}
+
